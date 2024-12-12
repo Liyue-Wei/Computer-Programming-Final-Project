@@ -96,7 +96,8 @@ def remove_file():
         pass
 
 def win_close():
-    index = "#include <iostream>\nusing namespace std;\nint func() {\n    cout << \"Hello NTTU ISMS::OJ\" << endl;\n\n    return 0;\n}"
+    # index = "#include <iostream>\nusing namespace std;\nint func() {\n    cout << \"Hello NTTU ISMS::OJ\" << endl;\n\n    return 0;\n}"
+    index = "#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Hello NTTU ISMS::OJ\" << endl;\n\n    return 0;\n}"
     ccf.write_temp_code(index)
     remove_file()    
     os._exit(False)
@@ -228,7 +229,8 @@ def submit():
         ccf.write_temp_code(index)
         flag = ccf.write_source_code(index, user)
         if(flag == True):
-            filename = str("Judge.cpp")
+            # filename = str("Judge.cpp")
+            filename = str("temp_code.cpp")
             create_exe()
             open_file_path = fd.path_function("/Extension_modules/Judge_Program/{}".format(filename.rstrip(".cpp")))
             judge(QN, open_file_path, user)

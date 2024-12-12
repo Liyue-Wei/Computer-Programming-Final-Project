@@ -58,7 +58,7 @@ def write_temp_code(index):
     except:
         import file_directory as fd
 
-    index = index.replace("main()", "func()")
+    # index = index.replace("main()", "func()")
     filename = str("temp_code.cpp")
     filename_2 = fd.path_function("/Extension_modules/Judge_Program/{}".format(filename))
     outFile = open(filename_2, 'w')
