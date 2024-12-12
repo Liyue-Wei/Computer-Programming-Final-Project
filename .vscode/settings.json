@@ -53,6 +53,5 @@
         "rand_func.h": "c",
         "time.h": "c"
     },
-    "dotnet.preferCSharpExtension": false,
-    "dotnet.defaultSolution": "disable"
+    "dotnet.preferCSharpExtension": true
 }
