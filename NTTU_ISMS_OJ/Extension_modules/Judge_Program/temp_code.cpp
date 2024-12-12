@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int func() {
+int main() {
     cout << "Hello NTTU ISMS::OJ" << endl;
 
     return 0;

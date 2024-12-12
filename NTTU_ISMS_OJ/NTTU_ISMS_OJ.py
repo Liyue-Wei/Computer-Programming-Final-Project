@@ -126,7 +126,8 @@ def insert_status(index):
     status_output.config(state="disabled")
 
 def create_exe():
-    filename = str("Judge.cpp")
+    # filename = str("Judge.cpp")
+    filename = str("temp_code.cpp")
     file_path = "cd {} && g++ {} -o {}".format(fd.path_function("/Extension_modules/Judge_Program"), filename, filename.rstrip(".cpp"))
     os.system(file_path)
 
