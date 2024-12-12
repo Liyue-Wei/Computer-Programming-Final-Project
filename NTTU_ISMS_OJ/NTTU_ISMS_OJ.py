@@ -135,8 +135,8 @@ def judge(QN, path, user):
     value_QSC = []
     value_source = []
     run_time = 0
-    TD_path = fd.path_function("Question_Database/default/TD_def_{}.dat".format(QN))
-    QSC_path = fd.path_function("Question_Database/default/TD_def_{}.cpp".format(QN))
+    TD_path = fd.path_function("Question_Database/default/TD_def_{}.dat".format((QN).rstrip('\n'))
+    QSC_path = fd.path_function("Question_Database/default/TD_def_{}.cpp".format((QN).rstrip('\n')))
 
     inFile = open(TD_path, 'r')
     Test_data = list(inFile.readlines())
