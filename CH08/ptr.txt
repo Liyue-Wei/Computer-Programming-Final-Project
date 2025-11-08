@@ -1,0 +1,5 @@
+符號   名稱                    用法      範例                說明
+&     取址 (Address-of)     運算子    int* p = &x;        取得變數 x 的記憶體位址。
+*     解引用 (Dereference)  運算子    int y = *p;         取得指標 p 所指向位址的值。
+&     引用 (Reference)      型別宣告  int& ref = x;       宣告 ref 作為 x 的別名。
+*     指標 (Pointer)        型別宣告  int* p;             宣告 p 是一個儲存位址的變數。
